@@ -1,0 +1,30 @@
+/* Correct usage of calc() demonstrating solutions */
+
+/* Correct percentage calculation: percentage is relative to the parent element's width */
+.container {
+  width: 50%;
+}
+.element {
+  width: calc(50% + 20px); /* Correct: adds 20px to 50% of parent width */
+}
+
+/* Correct spacing around operators */
+.element2 {
+  width: calc(100px + 20%); /* Correct: Proper spacing */
+}
+
+/* Correct operator precedence using parenthesis */
+.element3 {
+  width: calc((100px + 20px) / 2); /* Correct: Parenthesis to enforce precedence */
+}
+
+/* Consistent unit usage */
+.element4 {
+  width: calc(100px + 20px); /* Correct: Consistent use of px */
+  height: calc(100% - 20px); /* Correct: percentage used for height */
+}
+
+/* Using calc() with multiple properties */
+.element5 {
+  margin: calc(10px + 1em) calc(5px + 0.5em) calc(15px + 1em) calc(5px + 0.5em);
+}
